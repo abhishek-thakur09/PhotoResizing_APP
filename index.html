@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoResizerApp</title>
+    <link rel="stylesheet" href="ap.css">
+</head>
+<body>
+
+    <h1 id="h1">Image Resizer</h1>
+    <div id="container">         
+        <!-- __________image___________ -->
+        <div id="img-container">
+            
+        <img id="uploadimg" src="#" alt="">
+        </div>
+
+        <!-- _______________RIGHT-PART_______________ -->
+        <div id="right-part">
+            <form id="upload-form">
+                <input type="file" id="image-input" accept="image/*"> 
+            </form>
+    
+            
+    
+            <div>
+                <label for="range">Rotate</label>
+                <input id="rotate-range" min="0" max="180" value="0" type="range">
+            </div>
+            <div>
+                <label for="range">zoom</label>
+                <input id="zoom-range" type="range" value="1" step="0.008" min="1" max="1.5">
+            </div>
+    
+            <div id="buttons">
+                <button id="instagram">Instagram(680x500)</button>
+                <button id="facebook">Facebook(200x530)</button>
+                <button id="twitter">Twitter(500x550)</button>
+                <button id="website">Website(600x300)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ap.js"></script>
+</body>
+</html>
